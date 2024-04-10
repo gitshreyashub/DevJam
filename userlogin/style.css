@@ -9,7 +9,7 @@ body{
     align-items: center;
     min-height: 100vh;
     background-color: palevioletred;
-    background: url('/pg1.png') no-repeat;
+    background: url('./pg1.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
