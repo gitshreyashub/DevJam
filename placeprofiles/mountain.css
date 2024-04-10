@@ -1,0 +1,215 @@
+*{
+    padding:0;
+    margin:0;
+}
+.main{
+    width:95%;
+    height:180vh;
+    border:1px solid black;
+    margin:auto;
+    background-color: black;
+    background-image: url("bali.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:20px;
+}
+.head{
+    width:100%;
+    height:8%;
+    font-size: 25px;
+    color: aliceblue;
+    line-height: 40px;
+    text-align: center;
+}
+.row1{
+    width:95%;
+    height:45%;
+    
+    margin:auto;
+
+    border-collapse: separate;
+    display:flex;
+}
+.row2{
+    width:95%;
+    height:45%;
+
+    margin:auto;
+    border-collapse: separate;
+    display:flex;
+
+}
+.dabba1{
+    background-color: rgba(0,0,0, 0.7);
+    width:30%;
+    height:75vh;
+    margin:15px 15px 15px 15px;
+    border-radius: 7px;
+    box-shadow: 0px 10px 25px rgb(47, 44, 44);
+    padding-top: 10px;
+    
+}
+.dabba2{
+    background-color: rgba(0,0,0, 0.7);
+    width:30%;
+    height:75vh;
+    margin:15px 15px 15px 15px;
+    border-radius: 7px;
+    box-shadow: 0px 10px 25px rgb(47, 44, 44);
+    padding-top: 10px;
+    
+}
+.dabba3{
+    background-color: rgba(0,0,0, 0.7);
+    width:30%;
+    height:75vh;
+    margin:15px 15px 15px 15px;
+    border-radius: 7px;
+    box-shadow: 0px 10px 25px rgb(47, 44, 44);
+    padding-top: 10px;
+    
+}
+.dabba4{
+    background-color: rgba(0,0,0, 0.7);
+    width:30%;
+    height:75vh;
+    margin:15px 15px 15px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgb(47, 44, 44);
+    padding-top: 10px;
+    
+}
+.dabba5{
+    background-color: rgba(0,0,0, 0.7);
+    width:30%;
+    height:75vh;
+    margin:15px 15px 15px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgb(47, 44, 44);
+    padding-top: 10px;
+    
+}
+.dabba6{
+    background-color: rgba(0,0,0, 0.7);
+    width:30%;
+    height:75vh;
+    margin:15px 15px 15px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgb(47, 44, 44);
+    padding-top: 10px;
+}
+.photo1{
+    width:90%;
+    height:63%;
+    margin:auto;
+    padding-top: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    background-image: url("Kasol1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 10px 25px rgb(47, 44, 44);
+}
+.photo2{
+    width:90%;
+    height:63%;
+    margin:auto;
+    background-color: #fff;
+    border-radius: 10px;
+    background-image: url("NEPAL.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 10px 25px rgb(47, 44, 44);
+}
+.photo3{
+    width:90%;
+    height:63%;
+    margin:auto;
+    background-color: #fff;
+    border-radius: 10px;
+    background-image: url("BHUTAN1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 10px 25px rgb(47, 44, 44);
+}
+.photo4{
+    width:90%;
+    height:63%;
+    margin:auto;
+    background-color: #fff;
+    border-radius: 10px;
+    background-image: url("Munnar.jpeg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 10px 25px rgb(47, 44, 44);
+}
+.photo5{
+    width:90%;
+    height:63%;
+    margin:auto;
+    background-color: #fff;
+    border-radius: 10px;
+    background-image: url("LEH.jpeg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 10px 25px rgb(47, 44, 44);
+}
+.photo6{
+    width:90%;
+    height:63%;
+    margin:auto;
+    background-color: #fff;
+    border-radius: 10px;
+    background-image: url("DARJEELING.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 10px 25px rgb(47, 44, 44);
+}
+.about1{
+    margin:5px 5px 5px 15px;
+    color: aliceblue;
+    font-weight: 400;
+}
+.about2{
+    margin:5px 5px 5px 15px;
+    color: aliceblue;
+    font-weight: 400;
+}
+.about3{
+    margin:5px 5px 5px 15px;
+    color: aliceblue;
+    font-weight: 400;
+}
+.about4{
+    margin:5px 5px 5px 15px;
+    color: aliceblue;
+    font-weight: 400;
+}
+.about5{
+    margin:5px 5px 5px 15px;
+    color: aliceblue;
+    font-weight: 400;
+}
+.about6{
+    margin:5px 5px 5px 15px;
+    color: aliceblue;
+    font-weight: 400;
+}
+.btn{
+  position:relative;
+  width:150px;
+  padding:15px 0px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 10px;
+  margin: auto;
+  color: aliceblue;
+}
+.btn a{
+    text-decoration: none;
+    background-color: transparent;
+    
+}
