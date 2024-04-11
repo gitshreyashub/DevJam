@@ -1,0 +1,122 @@
+/* homePage.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('rest_out.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.top {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Name {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.headerright {
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.headerright div {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.main {
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.main h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.tiles {
+    display: flex;
+    justify-content: space-around;
+}
+.tile{
+    height: 500px;
+    width: 400;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.tile1 {
+    height: 300px;
+    width: 300px;
+    background: url('mount.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+.tile2 {
+    height: 300px;
+    width: 300px;
+    background: url('beach.jpeg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+.tile3 {
+    height: 300px;
+    width: 300px;
+    background: url('mount.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+.explore-btn {
+    background-color: #333;
+    color: #fff;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 5px;
+    border: none;
+}
+button{
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: black;
+}
+.below{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+@media (max-width: 768px) {
+    .tile {
+        flex-basis: 45%;
+    }
+}
