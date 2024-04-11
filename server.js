@@ -4,16 +4,16 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const app = express();
 
-app.use(express.static('public'));
+// Serve static files from the 'public' directory
+app.use(express.static(__dirname + '/public'));
 
-// MongoDB Atlas connection string
-const dbURI = 'mongodb+srv://<admin>:<admin123>@cluster0.uxfinir.mongodb.net/myDatabase?retryWrites=true&w=majority';
+
+const dbURI = 'mongodb+srv://mongodb+srv://<admin>:<admin123>@cluster0.uxfinir.mongodb.net/myDatabase?retryWrites=true&w=majority';
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
-// Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(session({
   secret: 'secret',

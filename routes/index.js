@@ -1,17 +1,17 @@
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
-const User = require('../models/User'); // User model
+const User = require('../models/User'); 
 const path = require('path');
 
 // Login Page
 router.get('/login', (req, res) => res.sendFile(path.join(__dirname, '..', 'userlogin', 'login.html')));
 
 // Register Page
-router.get('/register', (req, res) => res.sendFile(path.join(__dirname, '..', 'userlogin', 'signup.html')));
-
+router.get('/signup', (req, res) => {res.sendFile(path.join(__dirname, '..', 'userlogin', 'signup.html'));
+});
 // Register Handle
-router.post('/register', async (req, res) => {
+router.post('/signup', async (req, res) =>{
   const { name, email, password } = req.body;
   let errors = [];
 
@@ -43,7 +43,7 @@ router.post('/register', async (req, res) => {
       }
     } catch (err) {
       console.error(err);
-      res.redirect('/register');
+      res.redirect('/signup');
     }
   }
 });
@@ -57,7 +57,7 @@ router.post('/login', async (req, res) => {
       if (err) throw err;
       if (isMatch) {
         req.flash('success_msg', 'You are now logged in');
-        res.redirect('/dashboard'); // Assuming you have a dashboard route
+        res.redirect('/dashboard'); 
       } else {
         req.flash('error_msg', 'Password incorrect');
         res.redirect('/login');
