@@ -5,12 +5,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+    color: #fff;
+}
 body {
     font-family: 'Poppins', sans-serif;
-    background: url('rest_out.png') no-repeat;
+    background: url('bg_out.jpg') no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 .top {
@@ -76,6 +79,7 @@ body {
     background-position: center;
     background-size: cover;
     border-radius: 8px;
+    border: 5px;
 }
 .tile2 {
     height: 300px;
@@ -84,14 +88,16 @@ body {
     background-position: center;
     background-size: cover;
     border-radius: 8px;
+    border: 2px;
 }
 .tile3 {
     height: 300px;
     width: 300px;
-    background: url('mount.jpg') no-repeat;
+    background: url('foreign.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 8px;
+    border: 2px;
 }
 .explore-btn {
     background-color: #333;
