@@ -15,7 +15,10 @@ body {
     background-position: center;
     background-size: cover;
 }
-
+.logo{
+    height: 10vh;
+    width: 20vw;
+}
 .top {
     background-color: #333;
     color: #fff;
