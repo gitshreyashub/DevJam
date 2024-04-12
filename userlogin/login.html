@@ -6,8 +6,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <div id="flash-message" class="flashMessage"></div>
     <div class="main">
-        <form>
+        <form action="/login" method="post">
             <h1>Login</h1>
             <div class="headingName">Username/Email</div>
             <div class="headingBox" id="001">
@@ -25,14 +26,10 @@
             <div class="btn">
                 <button type="submit" class="btn1">Login</button>
             </div>  
-            <div class="btn">
-                <button type="submit" class="btn2">Login with Google <i class='bx bxl-google'></i></button>
-            </div>
             <div class="register">
                 <p>Don't have an account? <a href="/signup">Sign Up</a></p>
             </div>
         </form>
-        <div id="flash-message"></div> 
     </div>
     <script src="/js/flashMessages.js"></script> 
 </body>

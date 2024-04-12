@@ -1,14 +1,10 @@
-*{
-    margin:0;
-    padding:0;
-    font-family: "Poppins",sans-serif;
-}
-h1{
-    text-align: center;
-}
-body{
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
     background-color: aqua;
     display: flex;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
     justify-content: center;
@@ -16,41 +12,60 @@ body{
     background-position: center;
     background-size: cover;
 }
-.mainReg form{
+
+h1 {
+    text-align: center;
+}
+
+.flashMessage {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mainReg form {
     color: #fff;
     width: 90%;
 }
-.mainReg{
+
+.mainReg {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(127, 255, 212,0.2);
+    background-color: rgba(127, 255, 212, 0.2);
     height: 450px;
     width: 350px;
     border: none;
     border-radius: 30px;
 }
-.formName{
+
+.formName {
     margin-top: 15px;
     margin-bottom: 7px;
     padding-left: 10px;
 }
-.formName1{
+
+.formName1 {
     margin-top: 20px;
     margin-bottom: 7px;
     padding-left: 10px;
 }
-.registerBox{
+
+.registerBox {
     height: 40px;
     width: 100%;
     border: none;
     border-radius: 25px;
     margin-bottom: 25px;
 }
-.registerBox input::placeholder{
+
+.registerBox input::placeholder {
     padding-left: 10px;
 }
-.btn1{
+
+.btn1 {
     height: 40px;
     width: 100%;
     border: none;
@@ -58,6 +73,7 @@ body{
     margin-top: 20px;
     margin-bottom: 25px;
 }
+
 button {
     height: 100%;
     width: 100%;
@@ -65,6 +81,7 @@ button {
     border: none;
     background-color: rgb(8, 168, 168);
 }
-button:hover{
+
+button:hover {
     background-color: skyblue;
 }
