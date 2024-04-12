@@ -18,8 +18,8 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgba(138,43,226,0.8);
-    height: 420px;
+    background-color: rgba(138,43,226,0.65);
+    height: 490px;
     width: 350px;
     border: none;
     border-radius: 20px;
@@ -71,6 +71,10 @@ i {
     left: 115px;
     size: 15px;
 }
+.btn2 i{
+    position: relative;
+    top: 20;
+}
 .forgot {
     font-size: 13px;
     text-align: right;
@@ -103,14 +107,14 @@ button{
     margin: center;
 }
 .main .register{
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
     text-decoration: none;
     color: aliceblue;
     margin: 20px 0 15px
 }
 .main .register a{
-    font-size: 13px;
+    font-size: 15px;
     text-decoration: none;
     color: aliceblue;
     margin: 20px 0 15px

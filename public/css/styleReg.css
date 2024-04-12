@@ -24,8 +24,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(127, 255, 212,0.2);
-    height: 450px;
+    background-color: rgba(138,43,226,0.55); 
+    height: 480px;
     width: 350px;
     border: none;
     border-radius: 30px;
@@ -63,8 +63,8 @@ button {
     width: 100%;
     border-radius: 25px;
     border: none;
-    background-color: rgb(8, 168, 168);
+    background-color: #fff;
 }
 button:hover{
-    background-color: skyblue;
+    background-color:rgba(138,43,226,1); 
 }
