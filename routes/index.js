@@ -45,8 +45,11 @@ router.get('/login', (req, res) => {
 // Login Handle
 router.post('/login', async (req, res) => {
   const { email, password } = req.body;
+  console.log(req)
   try {
+    
     let user = await User.findOne({ email });
+    
     if (!user) {
       req.flash('error_msg', 'Email not registered');
       return res.redirect('/login');
@@ -62,6 +65,7 @@ router.post('/login', async (req, res) => {
         return res.redirect('/login');
       }
     });
+    
   } catch (err) {
     console.error(err);
     req.flash('error_msg', 'Error in login. Please try again.');
