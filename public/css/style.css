@@ -3,8 +3,11 @@
     padding:0;
     font-family: "Poppins",sans-serif;
 }
-body{
+*
+
+body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -13,44 +16,59 @@ body{
     background-size: cover;
     background-position: center;
 }
+
+.flashMessage {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 .main {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgba(138,43,226,0.65);
-    height: 490px;
+    background-color: rgba(138, 43, 226, 0.65);
+    height: 450px;
     width: 350px;
     border: none;
     border-radius: 20px;
     color: #fff;
     padding: 30px 40px;
 }
-.main form{
+
+.main form {
     width: 80%;
 }
-.main h1{
+
+.main h1 {
     font-size: 35px;
     height: 100%;
     width: 100%;
     text-align: center;
     padding-bottom: 15px;
 }
-.headingBox{
+
+.headingBox {
     height: 40px;
     width: 100%;
     border: 2px solid;
     border-radius: 20px;  
     margin: 30px 0;
 }
-#001{
+
+#001 {
     margin: 10px 0;
 }
-.main .headingName{
+
+.main .headingName {
     color: aliceblue;
     text-align: left;
 }
-.headingBox input{
+
+.headingBox input {
     height: 100%;
     width: 100%;
     background: transparent;
@@ -60,10 +78,11 @@ body{
     padding: 2px 5px 2px 14px;
 }
 
-.headingBox input::placeholder{
+.headingBox input::placeholder {
     color: rgba(252, 249, 249, 0.6);
     padding: 5px;
 }
+
 i {
     color: black;
     position: relative;
@@ -71,34 +90,41 @@ i {
     left: 115px;
     size: 15px;
 }
-.btn2 i{
+
+.btn2 i {
     position: relative;
     top: 20;
 }
+
 .forgot {
     font-size: 13px;
     text-align: right;
     text-decoration: none;
 }
+
 .forgot a {
     font-size: 13px;
     color: aliceblue;
     text-align: right;
     text-decoration: none;
 }
+
 .forgot:hover {
     font-size: 13px;
     text-align: right;
     color: blue;
     text-decoration: underline;
 }
-.btn{
+
+.btn {
     margin: 30px 0px;
 }
-button:hover{
-    background-color: rgba(138,43,226,1);       
+
+button:hover {
+    background-color: rgba(138, 43, 226, 1);       
 }
-button{
+
+button {
     text-align: center;
     height: 40px;
     width: 100%;
@@ -106,19 +132,22 @@ button{
     border: none;
     margin: center;
 }
-.main .register{
+
+.main .register {
     font-size: 15px;
     text-align: center;
     text-decoration: none;
     color: aliceblue;
     margin: 20px 0 15px
 }
-.main .register a{
+
+.main .register a {
     font-size: 15px;
     text-decoration: none;
     color: aliceblue;
     margin: 20px 0 15px
 }
+
 .register a:hover {
     color: blue;
     text-decoration: underline;
