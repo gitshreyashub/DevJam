@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const session = require('express-session');
 const flash = require('connect-flash');
-// const bodyParser = require('body-parser')
+
 
 const app = express();
 
@@ -11,7 +11,6 @@ mongoose.connect('mongodb://localhost:27017/Devjam', { useNewUrlParser: true, us
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('Error connecting to MongoDB', err));
 
-// app.use(bodyParser.json())
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())

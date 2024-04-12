@@ -45,7 +45,7 @@ router.get('/login', (req, res) => {
 // Login Handle
 router.post('/login', async (req, res) => {
   const { email, password } = req.body;
-  console.log(req)
+ 
   try {
     
     let user = await User.findOne({ email });
