@@ -31,6 +31,13 @@ body{
     border: none;
     border-radius: 30px;
 }
+.flashMessage {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 .formName{
     margin-top: 15px;
     margin-bottom: 7px;
