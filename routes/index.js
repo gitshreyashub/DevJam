@@ -105,7 +105,9 @@ router.post('/login', async (req, res) => {
 });
 
 //other routes
-
+router.get('/buy', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'userlogin', 'buy.html'));
+});
 
 router.get('/mountain', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'userlogin', 'mountain.html'));
@@ -149,6 +151,21 @@ router.get('/foreign', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'userlogin', 'foreign.html'));
 });
 
+router.get('/weather', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'userlogin', 'weather.html'));
+});
+
+router.get('/calender', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'userlogin', 'calender.html'));
+});
+
+router.get('/count', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'userlogin', 'count.html'));
+});
+
+router.get('/todo', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'userlogin', 'todo.html'));
+});
 
 
 module.exports = router;

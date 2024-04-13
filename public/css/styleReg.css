@@ -21,6 +21,14 @@ body{
     color: #fff;
     width: 90%;
 }
+.logo{
+    background-image: url("/css/logo.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 70px;
+    width: 300px;
+    
+}
 .mainReg{
     display: flex;
     align-items: center;

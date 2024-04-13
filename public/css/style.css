@@ -16,7 +16,14 @@ body {
     background-size: cover;
     background-position: center;
 }
-
+.logo{
+    background-image: url("/css/logo.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 70px;
+    width: 300px;
+    
+}
 .flashMessage {
     text-align: center;
     color: #fff;

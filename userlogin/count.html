@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="/css/count.css">
+    <script>
+        function countDown(destinationDateTime) {
+            setInterval(function() {
+                let dest = new Date(destinationDateTime).getTime();
+                let curr = new Date().getTime();
+                let diff = dest - curr;
+
+                if (diff <= 0) {
+                    // If the destination time has passed, clear the interval
+                    clearInterval(intervalId);
+                    alert("Countdown finished!");
+                    return;
+                }
+
+                let day = Math.floor(diff / (1000 * 60 * 60 * 24));
+                let hr = Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+                let min = Math.floor(diff % (1000 * 60 * 60) / (1000 * 60));
+                let sec = Math.floor(diff % (1000 * 60) / 1000);
+
+                document.getElementById("day").innerHTML = day + "<br/>" + "Day";
+                document.getElementById("hr").innerHTML = hr + "<br/>" + "Hour";
+                document.getElementById("min").innerHTML = min + "<br/>" + "Min";
+                document.getElementById("sec").innerHTML = sec + "<br/>" + "Sec";
+
+            }, 1000);
+
+            // Save the interval ID so that it can be cleared later
+            let intervalId = null;
+            return intervalId;
+        }
+
+        // Example usage:
+        // Get the destination date and time from the user
+        let destinationDateTimeString = prompt("Enter the destination date and time (e.g., June 4, 2024 10:00:00)");
+
+        // Call the countDown function with the user-provided destination date and time
+        let intervalId = countDown(destinationDateTimeString);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Time Left to Go</h1>
+        <button id="day"></button>
+        <button id="hr"></button>
+        <button id="min"></button>
+        <button id="sec"></button>
+    </div>
+</body>
+</html>

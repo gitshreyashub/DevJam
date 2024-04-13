@@ -31,16 +31,16 @@ const data = async function(search){
     temp.innerHTML=Math.floor(jsonData.main.temp)+"°C";
     type.innerHTML=jsonData.weather[0].main;
     if(type.innerHTML== "Clouds"){
-        image.src="clouds.jpg"
+        image.src="/css/clouds.jpg"
     }
     else if(type.innerHTML == "clear"){
-        image.src="clear.jpg"
+        image.src="/css/clear.jpg"
     }
     else if(type.innerHTML == "Rainy"){
-        image.src="rainy.jpg"
+        image.src="/css/rainy.jpg"
     }
     else if(type.innerHTML == "Haze"){
-        image.src="haze.jpg"
+        image.src="/css/haze.jpg"
     }
 
 
