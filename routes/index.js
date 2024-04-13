@@ -75,33 +75,34 @@ router.post('/login', async (req, res) => {
     req.flash('error_msg', 'Error in login. Please try again.');
     res.redirect('/login');
   }
+});
 
-  router.get('/forgot_password', (req, res) => {
+    router.get('/forgot_password', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'userlogin', 'forgotpass.html'));
   });
-  
+
+
+
   router.post('/forgot_password', async (req, res) => {
     const { email, phoneNumber } = req.body; 
-    console.log(req)
     
     try {
         let user = await User.findOne({ email, phoneNumber });
         
         if (!user) {
             req.flash('error_msg', 'Invalid Credentials');
+            res.redirect('/forgot_password');
         } else {
             req.flash('success_msg', 'Verification Code Sent');
+            res.redirect('/forgot_password');
         }
-        
         
     } catch (err) {
         console.error(err);
         req.flash('error_msg', 'An error occurred');
-        
+        res.redirect('/forgot_password');
     }
-  
-  });
-
+});
 
 //other routes
 
@@ -120,35 +121,34 @@ router.get('/kasol', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'userlogin', 'kasol.html'));
 });
 
-// router.get('/nepal', (req, res) => {
-//   res.sendFile(path.join(__dirname, '..', 'userlogin', 'nepal.html'));
-// });
-
-// router.get('/bhutan', (req, res) => {
-//   res.sendFile(path.join(__dirname, '..', 'userlogin', 'bhutan.html'));
-// });
-
-
-// router.get('/munnar', (req, res) => {
-//   res.sendFile(path.join(__dirname, '..', 'userlogin', 'munnar.html'));
-// });
-
-
-// router.get('/leh', (req, res) => {
-//   res.sendFile(path.join(__dirname, '..', 'userlogin', 'leh.html'));
-// });
-
-
-// router.get('/darjeeling', (req, res) => {
-//   res.sendFile(path.join(__dirname, '..', 'userlogin', 'darjeeling.html'));
-// });
-
-
-// router.get('/foreign', (req, res) => {
-//   res.sendFile(path.join(__dirname, '..', 'userlogin', 'foreign.html'));
-// });
-
-
-
+router.get('/nepal', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'userlogin', 'nepal.html'));
 });
+
+router.get('/bhutan', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'userlogin', 'bhutan.html'));
+});
+
+
+router.get('/munnar', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'userlogin', 'munnar.html'));
+});
+
+
+router.get('/leh', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'userlogin', 'leh.html'));
+});
+
+
+router.get('/darjeeling', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'userlogin', 'darjeeling.html'));
+});
+
+
+router.get('/foreign', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'userlogin', 'foreign.html'));
+});
+
+
+
 module.exports = router;
